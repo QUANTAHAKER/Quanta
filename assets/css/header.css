@@ -1,0 +1,158 @@
+/* Estilos del navbar / header */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(15, 12, 18, 0);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(15, 12, 18, 0.05);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+}
+
+.logo img,
+.logo-icon {
+  height: 90px;
+  width: auto;
+  display: block;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-menu,
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-menu a,
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-links a:hover {
+  background-color: rgba(233, 30, 140, 0.15);
+  color: #E91E8C;
+}
+
+.nav-buttons,
+.navbar-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn-demo {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #E91E8C 0%, #C91A78 100%);
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.5),
+    0 0 18px rgba(255, 255, 255, 0.25),
+    0 0 35px rgba(255, 255, 255, 0.12),
+    0 4px 15px rgba(233, 30, 140, 0.3);
+  white-space: nowrap;
+}
+
+.btn-demo:hover {
+  background: linear-gradient(135deg, #C91A78 0%, #E91E8C 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.6),
+    0 0 22px rgba(255, 255, 255, 0.35),
+    0 0 45px rgba(255, 255, 255, 0.18),
+    0 6px 20px rgba(233, 30, 140, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-login {
+  padding: 12px 28px;
+  background: #FFFFFF !important;
+  color: #000000 !important;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-login:hover {
+  background: #f0f0f0 !important;
+  border-color: #FFFFFF;
+  color: #000000 !important;
+  transform: translateY(-2px);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--primary);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}

@@ -1,0 +1,77 @@
+/* Variables CSS: colores, fuentes, espaciado (compatibles con estilos existentes) */
+:root {
+  /* Colores principales */
+  --color-primary: #E91E8C;
+  --color-primary-dark: #C91A78;
+  --color-primary-light: #FF4DA6;
+  --primary: #FF1B8D;
+  --pink: #FF1B8D;
+  --primary-light: #ff4da3;
+  --primary-dark: #cc1671;
+  --quanta-pink: #E91E8C;
+  --quanta-pink-rgb: 233, 30, 140;
+
+  /* Colores de fondo */
+  --bg-main: #0A0A0A;
+  --black: #0A0A0A;
+  --bg-dark: #0f0f0f;
+  --dark-gray: #1a1a1a;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #222;
+  --bg-dark-alt: #1A1A1A;
+
+  /* Colores de texto */
+  --text: #f0f0f0;
+  --text-white: #FFFFFF;
+  --text-muted: #aaa;
+  --text-gray: #c4c4c4;
+  --text-gray-alt: rgba(255, 255, 255, 0.7);
+  --text-light: rgba(255, 255, 255, 0.5);
+
+  /* Grises y bordes */
+  --gray-dark: #2a2a2a;
+  --gray-mid: #444;
+  --border: rgba(255, 27, 141, 0.3);
+  --shadow-pink: 0 0 30px rgba(255, 27, 141, 0.25);
+
+  /* Colores de estado */
+  --color-success: #25D366;
+  --color-error: #FF6B6B;
+  --color-warning: #FFC107;
+
+  /* Tipografía */
+  --font: 'Poppins', sans-serif;
+
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Tamaños de fuente */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 20px rgba(233, 30, 140, 0.4);
+
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}

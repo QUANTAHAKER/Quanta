@@ -1,0 +1,8 @@
+/* Archivo principal que importa todos los módulos CSS */
+@import url('reset.css');
+@import url('variables.css');
+@import url('base.css');
+@import url('header.css');
+@import url('hero.css');
+/* Resto: producto, universidad, precios, contacto, modals, footer, animations, responsive */
+@import url('rest.css');

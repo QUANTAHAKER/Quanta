@@ -1,0 +1,94 @@
+/* Base: layout, página de carga, contenedor (después de reset y variables) */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-main);
+  color: var(--text);
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Pantalla de carga (ruedita) */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-main);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.page-loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.page-loader__spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(233, 30, 140, 0.2);
+  border-top-color: var(--quanta-pink);
+  border-radius: 50%;
+  animation: page-loader-spin 0.9s linear infinite;
+}
+
+.page-loader__text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+@keyframes page-loader-spin {
+  to { transform: rotate(360deg); }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(255, 27, 141, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 27, 141, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Secciones comunes */
+.section {
+  padding: 6rem 1.5rem;
+  background: var(--bg-main);
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2rem, 4.5vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text);
+  line-height: 1.25;
+}

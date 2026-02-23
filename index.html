@@ -7,7 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <!-- CSS principal (módulos: reset, variables, base, header, hero, rest) -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
   <!-- Pantalla de carga con ruedita -->
@@ -45,7 +47,7 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section id="inicio" class="hero">
+  <section id="inicio" class="hero" style="background-image: url('fondo.png');">
     <!-- Fondo dinámico y efectos -->
     <div class="hero-bg-grid" aria-hidden="true"></div>
     <div class="hero-glow hero-mouse-light" id="heroMouseLight" aria-hidden="true"></div>
@@ -62,7 +64,7 @@
     <div class="hero-grid">
       <div class="hero-content">
         <h1 class="hero-title" id="heroTitle">
-          <img src="nombre.png" alt="Quanta" class="hero-title-img">
+          <img src="assets/images/logos/nombre.png" alt="Quanta" class="hero-title-img">
         </h1>
         <p class="hero-desc" id="heroDesc">
           Quanta ayuda a compañías de la industria manufacturera a implementar tecnología que les permita controlar, organizar y optimizar sus recursos empresariales.
@@ -945,6 +947,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
