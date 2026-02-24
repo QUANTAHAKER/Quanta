@@ -1011,7 +1011,7 @@
     bannerImg.onerror = function () {
       buildQuotePdf(payload, null);
     };
-    bannerImg.src = 'assets/images/illustrations/banner_coti.png';
+    bannerImg.src = '/assets/images/illustrations/banner_coti.png';
   }
 
   function buildQuotePdf(payload, bannerDataUrl) {
