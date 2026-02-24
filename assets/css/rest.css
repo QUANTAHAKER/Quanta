@@ -912,7 +912,7 @@
 /* ===== SECCIÓN PRICING (reducida ~50%) ===== */
 .pricing-section {
   padding: 3rem 1rem;
-  background-image: url('/assets/images/illustrations/fondo_p.png');
+  background-image: url('../../assets/images/illustrations/fondo_p.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

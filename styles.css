@@ -277,7 +277,7 @@ section {
   display: flex;
   align-items: center;
   padding: 6rem 1.5rem 4rem;
-  background-image: url('/assets/images/hero/fondo.png');
+  background-image: url('assets/images/hero/fondo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1460,7 +1460,7 @@ h1.quanta-title,
 /* ===== SECCIÓN PRICING (reducida ~50%) ===== */
 .pricing-section {
   padding: 3rem 1rem;
-  background-image: url('/assets/images/illustrations/fondo_p.png');
+  background-image: url('assets/images/illustrations/fondo_p.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
