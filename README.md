@@ -34,7 +34,7 @@ Landing page para **Quanta** — Software MRP/ERP para empresas manufactureras (
 
 Mueve tus archivos actuales a la nueva estructura:
 
-- `logo.png` → `assets/images/logos/logo-quanta.png`
+- `logo.png` → `assets/images/logos/logo.png`
 - `nombre.png` → `assets/images/logos/nombre.png`
 - `esfera.png` → `assets/images/hero/esfera.png`
 - `fondo.png` → `assets/images/hero/fondo.png`
